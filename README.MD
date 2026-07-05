@@ -78,15 +78,6 @@ UUID → Presence API → Game API → RSocket → Live Events → TCN Moves
 * chess-tcn
 * python-chess
 
-## Installation
-
-```bash
-git clone https://github.com/yourusername/chess-live-tracker.git
-cd chess-live-tracker
-pip install -r requirements.txt
-npm install chess-tcn
-```
-
 ## Why this project?
 
 Chess.com does not provide a public API for live games. This project explores Chess.com's internal services to understand how live games work and provides a foundation for building real-time applications, analytics tools, and protocol research.
@@ -94,6 +85,13 @@ Chess.com does not provide a public API for live games. This project explores Ch
 ## Disclaimer
 
 This project is **not affiliated with Chess.com**. It is an independent educational and research project intended for learning, protocol analysis, and experimentation.
+
+## 🔮 Upcoming Project — Blindfold Chess Discord Bot
+
+* Play blindfold chess with another user
+* GUI option for beginners
+* Game analysis
+* Stockfish with adjustable difficulty
 
 ## License
 
