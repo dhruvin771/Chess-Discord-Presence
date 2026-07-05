@@ -25,9 +25,9 @@ This project automatically detects when a player comes online, starts a game, co
 
 ## 🚧 In Progress (paused)
 
-* [ ] Decode TCN using `chess-tcn`
-* [ ] Convert TCN to UCI
-* [ ] Convert TCN to PGN
+* [X] Decode TCN using `chess-tcn`
+* [X] Convert TCN to UCI
+* [X] Convert TCN to PGN
 * [ ] Display SAN moves (`e4`, `Nf3`, etc.)
 * [ ] Build board using `python-chess`
 * [ ] Display live FEN
@@ -64,37 +64,7 @@ Since the second method isn't allowed, this project won't continue.
 ## Project Flow
 
 ```text
-Player UUID
-      │
-      ▼
-Presence API
-      │
-      ▼
-Playing?
-      │
-      ▼
-Game API
-      │
-      ▼
-RSocket
-      │
-      ▼
-Live Events
-      │
-      ▼
-Raw TCN Moves
-      │
-      ▼
-TCN Decoder
-      │
-      ▼
-UCI / PGN
-      │
-      ▼
-python-chess
-      │
-      ▼
-Board • FEN • SAN
+UUID → Presence API → Game API → RSocket → Live Events → TCN Moves
 ```
 
 ## Technologies
